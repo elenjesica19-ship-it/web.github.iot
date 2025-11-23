@@ -1,0 +1,58 @@
+<<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Clothesbub- pakaian anak muda gaul dan aesthetic. Pesan sekarang!">
+  <title>Clothesbub - E-commerce pakaian</title>
+  <link href="https:/croptop1" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>Clothesbub</h1>
+    <p>No. Bisnis: 085706194082</p>
+    <nav>
+      <ul>
+        <li><a href="#">Beranda</a></li>
+        <li><a href="#produk">Produk</a></li>
+        <li><a href="#keranjang">Keranjang</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Daftar Produk -->
+  <section id="produk" class="produk-list">
+    <h2>Produk Kami</h2>
+    <div class="produk">
+      <img src="c:\Users\User\Downloads\JavaScript\clothesbub2.jpg" alt="Croptop cokelat berdasi">
+      <h3>Clothesbub</h3>
+      <p>Rp 200.000</p>
+      <button onclick="tambahKeKeranjang('Crop berdasi', 200.000)">Tambah ke Keranjang</button>
+    </div>
+
+    <div class="produk">
+      <img src="c:\Users\User\Downloads\JavaScript\clothesbub3.jpg" alt="Ribbon Jumpsuit">
+      <h3>/RibbonJumpsuit</h3>
+      <p>Rp 200.000</p>
+      <button onclick="tambahKeKeranjang('RibbonJumpsuit', 200000)">Tambah ke Keranjang</button>
+    </div>
+  </section>
+
+  <!-- Keranjang -->
+  <section id="keranjang">
+    <h2>Keranjang Belanja</h2>
+    <ul id="daftar-keranjang"></ul>
+    <p>Total: Rp <span id="total">0</span></p>
+    <button onclick="checkout()">Checkout</button>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Clothesbub | Hubungi: 085706194082</p>
+  </footer>
+
+  <script src="javascript.js"></script>
+</body>
+</html>
